@@ -1,0 +1,34 @@
+/* src/styles/ProjectDetail.css */
+
+.project-detail {
+    background-color: #fff;
+    color: #333;
+    padding: 4rem 2rem;
+  }
+  
+  .project-detail-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .project-detail h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .project-detail-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-detail p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
