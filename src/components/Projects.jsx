@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Projects.css';
-import img1 from '../assets/1.png'
+import img1 from '../assets/test.png'
 
 const projects = [
   {
@@ -17,14 +17,14 @@ const projects = [
     id: '2',
     title: 'Proyecto 2',
     description: 'Descripción breve del proyecto 2. Explica qué es, qué tecnologías se utilizaron, y qué lograste.',
-    imageUrl: 'https://via.placeholder.com/400',
+    imageUrl: img1,
     link: '/project/2'
   },
   {
     id: '3',
     title: 'Proyecto 3',
     description: 'Descripción breve del proyecto 3. Explica qué es, qué tecnologías se utilizaron, y qué lograste.',
-    imageUrl: 'https://via.placeholder.com/400',
+    imageUrl: img1,
     link: '/project/3'
   }
 ];
