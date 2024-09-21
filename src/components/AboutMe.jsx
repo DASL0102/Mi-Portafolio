@@ -7,17 +7,20 @@ import { Container } from 'react-bootstrap'; // Asegúrate de que estás importa
 const AboutMe = () => {
   return (
     <Container fluid className="about-me">
-      <div className="about-me-content">
-        <h2>Know Who I'M</h2>
+      <div className="card about-me">
+        <h2>Know Who I Am</h2>
         <p>
-        Hi Everyone, I am Daniel Sanchez from Merida, Venezuela.
+          Hi Everyone, I am Daniel Sanchez from Merida, Venezuela.
         </p>
         <p>
-        I am currently employed as a software developer at Vultur.
+          I am currently employed as a software developer at Vultur.
         </p>
-        <p>
-         
-        </p>
+        <p>Apart from coding, some other activities that I love to do include:</p>
+        <ul>
+          <li>Playing video games</li>
+          <li>Listening to music</li>
+          <li>Exercising</li>
+        </ul>
       </div>
     </Container>
   );

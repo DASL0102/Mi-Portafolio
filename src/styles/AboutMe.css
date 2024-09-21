@@ -1,24 +1,59 @@
-/* src/styles/AboutMe.css */
-
-.about-me {
-  padding: 60px 20px; /* Espaciado para el contenedor */
-  background-color: tra; /* Fondo oscuro para el contenedor */
-  color: white; /* Texto blanco */
+.card {
+  background-color: rgba(46, 35, 201, 0.2); /* Fondo con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  max-width: 400px; /* Ancho máximo de la tarjeta */
+  margin: 60px 20px; /* Margen alrededor de la tarjeta */
+  text-align: left; /* Alinear texto a la izquierda */
 }
 
-.about-me-content {
-  max-width: 800px; /* Ancho máximo del contenido */
-  margin: 0 auto; /* Centrar el contenido */
-  text-align: left; /* Alinear texto a la izquierda */
+.about-me {
+  color: white; /* Texto blanco */
 }
 
 .about-me h2 {
   font-size: 2em; /* Tamaño de fuente del encabezado */
   margin-bottom: 20px; /* Espacio debajo del encabezado */
+  overflow: hidden; /* Esconder el contenido que excede */
+  white-space: nowrap; /* No permitir saltos de línea */
+  border-right: 2px solid white; /* Cursor de escritura */
+  animation: typing 4s steps(30, end) infinite alternate; /* Animación de escritura y borrado */
 }
 
 .about-me p {
   font-size: 1.1em; /* Tamaño de fuente para los párrafos */
   line-height: 1.5; /* Espaciado entre líneas */
   margin-bottom: 15px; /* Espacio debajo de cada párrafo */
+}
+
+/* Estilos para el contenedor */
+.container {
+  display: flex; /* Usar flexbox para la alineación */
+  justify-content: flex-start; /* Alinear a la izquierda */
+  align-items: flex-start; /* Alinear verticalmente al inicio */
+  padding: 60px; /* Espaciado para el contenedor */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Comienza oculto */
+  }
+  to {
+    width: 100%; /* Muestra todo el texto */
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent; /* Cursor oculto */
+  }
+  50% {
+    border-color: white; /* Cursor visible */
+  }
+}
+
+/* Añadir la animación de parpadeo al cursor */
+.about-me h2 {
+  animation: typing 4s steps(30, end) infinite alternate, blink 0.75s step-end infinite;
 }
