@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -38,14 +40,10 @@ const Header = () => {
       <nav>
         <ul className="menu">
           <li>
-            <a href="/Mi-Portafolio/about">
-              <i className="fas fa-user"></i> Sobre mí
-            </a>
+          <Link to="/about">Sobre mí</Link>
           </li>
           <li>
-            <a href="/Mi-Portafolio/projects">
-              <i className="fas fa-folder"></i> Proyectos
-            </a>
+          <Link to="/projects">Proyectos</Link>
           </li>
           <li>
             <a href="#contact">
