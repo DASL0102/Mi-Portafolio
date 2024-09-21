@@ -16,7 +16,7 @@ function App() {
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundImage: bg,
+        backgroundColor: 'purple',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
