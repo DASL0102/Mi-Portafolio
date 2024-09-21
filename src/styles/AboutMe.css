@@ -1,65 +1,24 @@
 /* src/styles/AboutMe.css */
 
 .about-me {
-    background-color: #f4f4f9; /* Color de fondo suave */
-    color: #333;
-    padding: 4rem 2rem;
-    border-top: 5px solid #ff7e5f; /* Línea superior de color */
-  }
-  
-  .about-me-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .about-me h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #333; /* Color del encabezado */
-    position: relative;
-    display: inline-block;
-  }
-  
-  .about-me h2::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 4px;
-    background-color: #ff7e5f; /* Subrayado decorativo */
-  }
-  
-  .about-me p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    color: #666; /* Color del texto de párrafo */
-    text-align: justify; /* Justificar el texto */
-  }
-  
-  .about-me img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 2rem;
-  }
-  
-  .about-me .cta-button {
-    display: inline-block;
-    background-color: #ff7e5f;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .about-me .cta-button:hover {
-    background-color: #feb47b;
-  }
-  
+  padding: 60px 20px; /* Espaciado para el contenedor */
+  background-color: tra; /* Fondo oscuro para el contenedor */
+  color: white; /* Texto blanco */
+}
+
+.about-me-content {
+  max-width: 800px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.about-me h2 {
+  font-size: 2em; /* Tamaño de fuente del encabezado */
+  margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+.about-me p {
+  font-size: 1.1em; /* Tamaño de fuente para los párrafos */
+  line-height: 1.5; /* Espaciado entre líneas */
+  margin-bottom: 15px; /* Espacio debajo de cada párrafo */
+}

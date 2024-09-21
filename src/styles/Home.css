@@ -1,38 +1,67 @@
 /* src/styles/Home.css */
 
 .home {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: space-between; /* Espacio entre texto y imagen */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 0 2rem; /* Espacio a los lados */
+    background: none; /* Sin fondo */
+  }
+  
+  .intro {
+    max-width: 400px; /* Ancho máximo para limitar el tamaño */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+  
+  .intro h1, .intro h2 {
+    margin: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards; /* Animación para los encabezados */
     color: #fff;
-    text-align: center;
-    padding: 4rem 2rem;
   }
   
-  .home-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .home h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .home p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: #333;
+  .intro h2 {
+    animation-delay: 0.3s; /* Retraso para la segunda línea */
     color: #fff;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
   }
   
-  .cta-button:hover {
-    background-color: #555;
+  .animated-text {
+    display: inline-block; /* Para animación de cada letra */
+    overflow: hidden; /* Oculta letras fuera de la vista */
+    white-space: nowrap; /* Evita que las letras se muevan a la siguiente línea */
+    animation: typing 4s steps(30, end) infinite alternate; /* Animación de escritura y borrado */
+    color: #fff;
+  }
+  
+  .image-container {
+    max-width: 400px; /* Limitar el ancho de la imagen */
+    flex-shrink: 0; /* Evitar que la imagen se reduzca */
+    margin-left: auto; /* Empujar la imagen hacia la derecha */
+  }
+  
+  .image-container img {
+    width: 100%; /* Ajustar la imagen al contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0; /* Comienza oculto */
+    }
+    50% {
+      width: 100%; /* Muestra todo el texto */
+    }
+    100% {
+      width: 0; /* Esconde el texto de nuevo */
+    }
   }
   
