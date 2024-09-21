@@ -8,19 +8,7 @@ body {
    
   }
 
-  /* Clase de fondo para usar una imagen */
-  .background {
-    position: fixed; /* Cambia a fixed para que siempre esté en la misma posición */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://via.placeholder.com/1920x1080.png?text=Background+Image');
-    background-size: cover; /* Hace que la imagen cubra toda el área */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    z-index: -1; /* Asegúrate de que el fondo esté detrás del contenido */
-  }
+  
 
   .content {
     position: relative; /* Permite que el contenido se muestre sobre el fondo */

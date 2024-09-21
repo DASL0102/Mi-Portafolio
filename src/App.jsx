@@ -5,11 +5,23 @@ import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
+import bg from './assets/home-bg.jpg'
 
 function App() {
   return (
     <Router basename="/Mi-Portafolio"> {/* Definir basename aquí */}
-      <div className="background"></div> {/* Fondo animado */}
+      <div className="background" style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundImage: bg,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        zIndex: -1,
+      }}></div>
       <Header /> {/* Siempre presente */}
       <Routes>
         <Route path="/" element={<Home />} /> {/* Ruta para la página principal */}
