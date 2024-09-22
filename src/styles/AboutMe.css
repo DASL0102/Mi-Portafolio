@@ -1,11 +1,35 @@
+.about-me-content {
+  display: flex; /* Usar flexbox para alinear los elementos */
+  align-items: center; /* Alinear verticalmente al centro */
+  margin: 60px 20px; /* Espaciado alrededor del contenedor */
+}
+
 .card {
-  background-color: rgba(46, 35, 201, 0.2); /* Fondo con transparencia */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  max-width: 400px; /* Ancho máximo de la tarjeta */
-  margin: 60px 20px; /* Margen alrededor de la tarjeta */
-  text-align: left; /* Alinear texto a la izquierda */
+  background-color: rgba(46, 35, 201, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin-right: 20px; /* Espacio entre la tarjeta y la imagen */
+  flex: 1; /* Permitir que la tarjeta ocupe espacio */
+}
+
+.image-container {
+  flex-shrink: 0; /* Evitar que la imagen se reduzca */
+  overflow: hidden; /* Asegura que el recorte funcione */
+  border-radius: 60px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+}
+
+.image-container img {
+  width: 100%; /* Ajustar la imagen al contenedor */
+  height: auto; /* Mantener proporciones */
+  transition: transform 0.3s ease; /* Suave transición para efectos */
+}
+
+/* Efecto de hover */
+.image-container img:hover {
+  transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
 }
 
 .about-me {
@@ -25,6 +49,7 @@
   font-size: 1.1em; /* Tamaño de fuente para los párrafos */
   line-height: 1.5; /* Espaciado entre líneas */
   margin-bottom: 15px; /* Espacio debajo de cada párrafo */
+  text-align: justify;
 }
 
 /* Estilos para el contenedor */
@@ -34,6 +59,32 @@
   align-items: flex-start; /* Alinear verticalmente al inicio */
   padding: 60px; /* Espaciado para el contenedor */
 }
+
+.activities-list {
+  list-style: none; /* Quitar el estilo de lista predeterminado */
+  padding: 0; /* Quitar padding */
+  margin: 0; /* Quitar margin */
+}
+
+.activities-list li {
+  display: flex; /* Usar flexbox para alinear icono y texto */
+  align-items: center; /* Centrar verticalmente */
+  margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+  color: white; /* Color del texto */
+}
+
+.activities-list li i {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  color: rgba(255, 255, 255, 0.8); /* Color del icono */
+  transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto de hover para los iconos */
+.activities-list li:hover i {
+  color: white; /* Cambiar color del icono al pasar el ratón */
+}
+
+
 
 @keyframes typing {
   from {
