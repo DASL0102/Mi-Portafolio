@@ -9,10 +9,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <script type="module" crossorigin src="/Mi-Portafolio/assets/index-C8Zb_EVn.js"></script>
+    <script type="module" crossorigin src="/Mi-Portafolio/assets/index-GHFmf_yf.js"></script>
     <link rel="stylesheet" crossorigin href="/Mi-Portafolio/assets/index-CbQ5hmet.css">
   </head>
   <body>
     <div id="root"></div>
+
+    <script>
+      // Manejar el enrutamiento para que las rutas funcionen correctamente
+      window.addEventListener('popstate', function(event) {
+        // Recargar la página para asegurarse de que la ruta se maneje correctamente
+        window.location.reload();
+      });
+
+      // Redirigir a la URL correcta al cargar la página
+      if (window.location.pathname.startsWith('/Mi-Portafolio')) {
+        window.history.pushState(null, '', '/Mi-Portafolio/');
+      }
+    </script>
   </body>
 </html>
