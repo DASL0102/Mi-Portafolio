@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
+import Contact from './components/Contact'
 import ProjectDetail from './components/ProjectDetail';
 import bg from './assets/home-bg.jpg';
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>
   );

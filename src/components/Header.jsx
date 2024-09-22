@@ -50,9 +50,9 @@ const Header = () => {
           </Link>
           </li>
           <li>
-            <a href="#contact">
-              <i className="fas fa-envelope"></i> Contact
-            </a>
+            <Link to="contact">
+            <i className="fas fa-envelope"></i> Contact
+            </Link>
           </li>
         </ul>
       </nav>
