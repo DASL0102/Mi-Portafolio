@@ -13,5 +13,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      // Manejar el enrutamiento para que las rutas funcionen correctamente
+      window.addEventListener('popstate', function(event) {
+        // Recargar la página para asegurarse de que la ruta se maneje correctamente
+        window.location.reload();
+      });
+
+      // Redirigir a la URL correcta al cargar la página
+      if (window.location.pathname.startsWith('/Mi-Portafolio')) {
+        window.history.pushState(null, '', '/Mi-Portafolio/');
+      }
+    </script>
   </body>
 </html>

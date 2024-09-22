@@ -40,10 +40,10 @@ const Header = () => {
       <nav>
         <ul className="menu">
           <li>
-          <Link to="/about">Sobre mí</Link>
+          <Link to="about">Sobre mí</Link>
           </li>
           <li>
-          <Link to="/projects">Proyectos</Link>
+          <Link to="projects">Proyectos</Link>
           </li>
           <li>
             <a href="#contact">
