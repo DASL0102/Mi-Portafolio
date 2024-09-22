@@ -90,31 +90,6 @@ body {
   color: #ddd;
 }
 
-
-  
-  /* Estilos para la sección de proyectos */
-  #projects {
-    background-color: #fff;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  #projects h2 {
-    margin-top: 0;
-  }
-  
-  .project-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    margin: 1rem auto;
-    max-width: 300px;
-  }
-  
-  .project-card h3 {
-    margin-top: 0;
-  }
   
   /* Estilos para el pie de página */
   footer {

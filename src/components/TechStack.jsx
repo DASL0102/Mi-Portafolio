@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import kotlinIcon from '../assets/kotlinlang-ar21.svg'
+import djangoIcon from '../assets/django.svg'
+import fastApiIcon from '../assets/FastAPI.svg'
 
 import {
   DiJavascript1,
@@ -24,36 +26,39 @@ import { TbBrandGolang } from "react-icons/tb";
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={kotlinIcon} alt="Kotlin" style={{ width: '150px', height: 'auto' }} />
-    </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <CgCPlusPlus />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <DiJavascript1 />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <DiReact />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <DiMongodb />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <DiGit />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiFirebase />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiPostgresql />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <DiPython />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <img src={kotlinIcon} alt="Kotlin" style={{ width: '150px', height: 'auto' }} />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <img src={djangoIcon} alt="Django" style={{ width: '100px', height: 'auto' }} />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <img src={fastApiIcon} alt="FastAPI" style={{ width: '100px', height: 'auto' }} />
+        </Col>
 
     </Row>
   );
