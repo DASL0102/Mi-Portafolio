@@ -54,7 +54,7 @@
 
 /* Estilos para el contenedor */
 .container {
-  display: flex; /* Usar flexbox para la alineación */
+  display: relative; /* Usar flexbox para la alineación */
   justify-content: flex-start; /* Alinear a la izquierda */
   align-items: flex-start; /* Alinear verticalmente al inicio */
   padding: 60px; /* Espaciado para el contenedor */
@@ -84,6 +84,18 @@
   color: white; /* Cambiar color del icono al pasar el ratón */
 }
 
+.project-heading {
+  font-size: 2.5em; /* Tamaño de fuente para el encabezado */
+  margin-bottom: 20px; /* Espacio debajo del encabezado */
+  color: white; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+}
+
+.purple {
+  color: rgb(182, 16, 182); /* Color púrpura para el texto en negrita */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto para darle profundidad */
+}
+
 
 
 @keyframes typing {
@@ -107,4 +119,54 @@
 /* Añadir la animación de parpadeo al cursor */
 .about-me h2 {
   animation: typing 4s steps(30, end) infinite alternate, blink 0.75s step-end infinite;
+}
+
+.techstack {
+  display: flex; /* Usar flexbox para alinear los íconos en fila */
+  flex-wrap: wrap; /* Permitir que los íconos se ajusten en varias líneas si es necesario */
+  justify-content: center; /* Centrar los íconos */
+}
+
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border-radius: 5px !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px !important;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+
+.quote-card-view {
+  border: none !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.about-activity {
+  list-style: none !important;
+  text-align: left !important;
+  padding-left: 1px !important;
+}
+
+@media (max-width: 767px) {
+  .about-img {
+    padding-top: 0 !important;
+  }
 }

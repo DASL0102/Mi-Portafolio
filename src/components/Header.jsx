@@ -32,7 +32,7 @@ const Header = () => {
       <ul className="menu">
       <li>
             <a href="/Mi-Portafolio/">
-              <i className="fas fa-user"></i> Mi Portafolio
+            <i className="fas fa-home"></i> Home
             </a>
           </li>
       </ul>
@@ -40,14 +40,18 @@ const Header = () => {
       <nav>
         <ul className="menu">
           <li>
-          <Link to="about">Sobre mí</Link>
+          <Link to="about">
+            <i className="fas fa-user"></i> About me
+          </Link>
           </li>
           <li>
-          <Link to="projects">Proyectos</Link>
+          <Link to="projects">
+            <i className="fas fa-project-diagram"></i> Projects
+          </Link>
           </li>
           <li>
             <a href="#contact">
-              <i className="fas fa-envelope"></i> Contacto
+              <i className="fas fa-envelope"></i> Contact
             </a>
           </li>
         </ul>
