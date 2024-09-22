@@ -1,0 +1,50 @@
+/* Selector de la sección */
+.contact-section {
+    background-color: transparent;
+    padding: 50px 0;
+}
+
+/* Título */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f8f8f8;
+    text-transform: uppercase;
+}
+
+/* Item de contacto */
+.contact-item {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icono */
+.icon {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.contact-section p {
+    color: #f8f8f8;
+}
+/* Enlace */
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Enlace de redes sociales */
+.social-link {
+    margin: 0 15px;
+    color: #007bff;
+    transition: transform 0.3s;
+}
+
+/* Hover para redes sociales */
+.social-link:hover {
+    transform: scale(1.1);
+}
