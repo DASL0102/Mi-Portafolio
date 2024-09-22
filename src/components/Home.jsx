@@ -13,7 +13,7 @@ const Home = () => {
       <div className="intro">
         <h1>Hi There! 👋🏻</h1>
         <h2>I'M DANIEL SANCHEZ</h2>
-        <h3 className="animated-text">Open Source Contributor|</h3>
+        <h3 className="animated-text">Software Developer|</h3>
       </div>
       <div className="image-container">
         <img src={myImage} alt="Descripción de la imagen" />
