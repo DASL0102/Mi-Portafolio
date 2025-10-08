@@ -4,6 +4,9 @@ import { CgCPlusPlus } from "react-icons/cg";
 import kotlinIcon from '../assets/kotlinlang-ar21.svg'
 import djangoIcon from '../assets/django.svg'
 import fastApiIcon from '../assets/FastAPI.svg'
+import n8nIcon from '../assets/n8n.png';
+import supabaseIcon from '../assets/supabase.png';
+
 
 import {
   DiJavascript1,
@@ -58,6 +61,12 @@ function Techstack() {
         </Col>
         <Col xs={4} md={2} className="tech-icons">
             <img src={fastApiIcon} alt="FastAPI" style={{ width: '100px', height: 'auto' }} />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <img src={n8nIcon} alt="n8n" style={{ width: '100px', height: 'auto' }} />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <img src={supabaseIcon} alt="Supabase" style={{ width: '100px', height: 'auto' }} />
         </Col>
 
     </Row>
